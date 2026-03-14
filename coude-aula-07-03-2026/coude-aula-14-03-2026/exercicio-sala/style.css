@@ -13,7 +13,9 @@ div{
     background-repeat: no-repeat;
     position: relative;
     width: 400px;
+    height: 250px;
     margin: auto;
+    background-size: auto;
     
 }
 
@@ -48,9 +50,4 @@ a:hover{
 a{
     color:black;
     margin: auto;
-}
-
-span{
-    font-weight: bold;
-    margin:auto;
 }
