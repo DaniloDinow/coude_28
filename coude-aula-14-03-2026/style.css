@@ -1,0 +1,22 @@
+/*ALL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    color: #2aa53f;
+}
+
+div{
+
+}
+
+.caixa{
+    border: 1px solid #f80707;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
