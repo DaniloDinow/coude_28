@@ -16,7 +16,6 @@ h2{
 p{
     color: #313131;
     text-align: justify;
-    line-height: auto;
     line-height: 1.5; /* altura da linha 1.5 vezes o tamanho da fonte */
 }
 
