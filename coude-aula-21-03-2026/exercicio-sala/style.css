@@ -1,0 +1,25 @@
+:root{
+--cor-clara:#00b7ff;
+--cor-escura:#00003d;
+--fonte-pequena: 10px;
+--fonte-grande: 30px;
+--espacamento-menor: 5px;
+--espacamento-maior: 10px;
+}
+
+.tema-escuro{
+    color: var(--cor-clara);
+    font-size: var(--fonte-grande);
+    background-color: var(--cor-escura);
+}
+
+.tema-claro{
+    color: var(--cor-escura);
+    font-size: var(--cor-escura);
+    background-color: var(--cor-clara);
+}
+
+.blocos{
+    margin: var(--espacamento-maior);
+    padding: var(--espacamento-menor);
+}
