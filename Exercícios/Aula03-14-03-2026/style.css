@@ -1,5 +1,6 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    box-sizing: border-box;
 }
 
 h1{
@@ -18,18 +19,42 @@ p{
     line-height: auto;
 }
 
+body{
+    display: flex;
+}
+
+section{
+    display: flex;
+}
 .materia{
-    width: 80%;
+    width: 75%;
 }
 
 .curiosidade{
-    width: 20%;
-    border: 2px solid red;
+    width: 25%;
+    border: 2px solid rgb(0, 255, 0);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;             /* espaço interno */
+    box-sizing: border-box;    /* inclui borda e padding no cálculo da largura */
+    word-wrap: break-word;     /* quebra palavras longas */
+    overflow-wrap: break-word; /* alternativa moderna */
+    overflow: hidden;          /* evita que conteúdo transborde */
+    gap: 10px;                 /* controla o espaçamento entre as divs */
+    
+      
 }
 
 #quadro1{
-    border: 2px solid green;
-    margin: auto;
-    padding: 0px 10px 0px 10px
+    border: 2px solid #c90101;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+}
+
+#quadro2{
+    border: 2px solid #000000;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
 }
 
