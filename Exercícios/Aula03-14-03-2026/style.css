@@ -27,11 +27,11 @@ section{
     display: flex;
 }
 .materia{
-    width: 75%;
+    width: 70%;
 }
 
 .curiosidade{
-    width: 25%;
+    width: 30%;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ section{
     overflow-wrap: break-word; /* alternativa moderna */
     overflow: hidden;          /* evita que conteúdo transborde */
     gap: 10px;                 /* controla o espaçamento entre as divs */
-    
+    min-width: 300px;           /* largura mínima */
       
 }
 
