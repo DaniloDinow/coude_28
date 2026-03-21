@@ -15,7 +15,7 @@
 
 .tema-claro{
     color: var(--cor-escura);
-    font-size: var(--cor-escura);
+    font-size: var(--fonte-pequena);
     background-color: var(--cor-clara);
 }
 

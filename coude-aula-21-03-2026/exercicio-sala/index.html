@@ -6,15 +6,25 @@
     <title>Variáveis CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="tema-escuro">
+<script>
+function trocarClasse() {
+  const caixa = document.getElementById("corpo");
+  
+  // Alterna entre as classes
+  if (caixa.classList.contains("tema-escuro")) {
+    caixa.className = "tema-claro";
+  } else {
+    caixa.className = "tema-escuro";
+  }
+}
+</script>
+<body id="corpo" class="tema-escuro">
     <header class="blocos">
         <h1>Vamos aprender a usar variáveis Rapaziada</h1>
     </header>
     <main class="blocos">
-        <div>
-            <p>Chaaaaaaamaaaa!</p>
-        </div>
+        <p>Chaaaaaaamaaaa!</p>
+        <button onclick="trocarClasse()" style="cursor:pointer;">Trocar classe</button>
     </main>
     <footer class="blocos">
         <p>Deu certo aí patrão?</p>
