@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    border: 1px solid grey;
+    background-color: green;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 4vh;
+}
+
+card{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 20vh;
+    width: 14vw;
+}
+.menu-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    font-size: larger;
+}
