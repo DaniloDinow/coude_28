@@ -2,7 +2,10 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+:root{
+    --around:space-around;
+    --between:space-between;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -16,18 +19,28 @@ nav{
 section{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     padding: 5px;
     gap: 4vh;
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: var(--around);
+}
+
+.between{
+    justify-content: var(--between);
 }
 
 card{
     border: 1px solid black;
     border-radius: 10px;
-    height: 20vh;
-    width: 14vw;
+    height: 30vh;
+    width: 13vw;
+    min-width: 100px;
 }
+
 .menu-links{
     display: flex;
     justify-content: space-evenly;

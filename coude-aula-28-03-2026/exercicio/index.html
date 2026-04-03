@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Navegação</title>
+    
 </head>
+<script>
+function trocarClasse() {
+  const caixa = document.getElementById("cards");
+  
+  // Alterna entre as classes
+  if (caixa.classList.contains("around")) {
+    caixa.className = "between";
+  } else {
+    caixa.className = "around";
+  }
+}
+</script>
 <body>
     <header>
         <nav>
@@ -20,7 +33,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="cards" class="between">
             <card>CARD 1</card>
             <card>CARD 2</card>
             <card>CARD 3</card>
@@ -29,6 +42,9 @@
             <card>CARD 6</card>
             <card>CARD 7</card>
             <card>CARD 8</card>
+        </section>
+        <section>
+            <button onclick="trocarClasse()" style="cursor:pointer;">Trocar classe</button>
         </section>
     </main>
     <footer></footer>
