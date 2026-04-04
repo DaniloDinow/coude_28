@@ -39,6 +39,7 @@ body {
 h1, h2, h3 {
   font-family: var(--font-title);
   color: var(--color-primary);
+  text-align: center;
 }
 
 /* Links */
@@ -62,6 +63,12 @@ header {
   letter-spacing: 2px;
   display: flex;
   gap: 1rem;
+
+  position: fixed;
+  width: 100%;
+  opacity: 0.95;
+  backdrop-filter: blur(4px);
+  z-index: 1000;
 }
 
 logo{
@@ -80,8 +87,13 @@ nav{
     flex-wrap: wrap;
 }
 
+/* Corpo*/
 .secao{
     padding: 1rem;
+}
+
+#home{
+    margin-top: 5.4rem;
 }
 
 .cards{
@@ -119,16 +131,42 @@ card:hover{
     text-size-adjust: 0,8rem;
 }
 
+.contatos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+table, th, td{
+    border: 0.1rem solid var(--color-primary);
+    border-collapse: collapse;
+}
+
+input button:hover{
+  background-color: var(--color-hover);
+  text-shadow: 0 0 15px var(--color-hover);
+}
+
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    width:100%;
     margin: 1rem;
 }
 
 footer::before{
     content: url(../img/favicon.ico);
 
+}
+
+/* MEDIA BREAKPOINT*/
+
+@media (max-width:768px){
+    .escuro{
+        background-color: yellow;
+        color: var(--color-dark);
+    }
 }
