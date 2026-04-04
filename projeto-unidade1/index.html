@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dare Devs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<script>
+function trocarClasse() {
+  const caixa = document.getElementById("corpo");
+  
+  // Alterna entre as classes
+  if (caixa.classList.contains("escuro")) {
+    caixa.className = "claro";
+  } else {
+    caixa.className = "escuro";
+  }
+}
+</script>
+<body id="corpo">
+    <header>
+        <logo>
+            <div>
+                <img src="img/DD_ORIGINAL.png" alt="Dare Devs Logo" height="50px" width="50px" onclick="trocarClasse()" style="cursor:pointer;">
+            </div>
+            <div>Dare Devs</div> 
+        </logo>
+        <nav>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="#quem-somos">Quem Somos</a></div>
+            <div><a href="#produtos">Produtos e Serviços</a></div>
+            <div><a href="#contato">Contato</a></div>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="img/dd_banner2.png" alt="daredevs" width="100%">
+    </section>
+    <section class="secao" id="quem-somos">
+        <h2>QUEM SOMOS</h2>
+        <p>Na DARE DEVS acreditamos que a tecnologia deve ser simples, acessível e transformadora. Somos uma empresa jovem e inovadora, dedicada a criar soluções digitais que facilitam o dia a dia de pessoas e negócios.</p>
+        <p>Nosso propósito é unir criatividade e eficiência para desenvolver ferramentas inteligentes que resolvem problemas reais de forma prática. Valorizamos a inovação, mas sem complicar: buscamos sempre entregar experiências claras, intuitivas e eficazes.</p>
+        <p>Com uma equipe apaixonada por tecnologia e movida pelo desafio de fazer diferente, estamos prontos para ajudar nossos clientes a crescer e se destacar em um mundo cada vez mais conectado.</p>
+    </section>
+    <section class="secao" id="produtos">
+        <h2>PRODUTOS E SERVIÇOS</h2>
+        <div class="cards">
+        <card>
+            <div><img class="card-img" src="img/card_web.jpg" alt="Website"></div>
+            <div class="legenda">Presença digital moderna e adaptável a qualquer dispositivo.</div>
+        </card>
+        <card>
+            <div><img class="card-img" src="img/card_app.jpg" alt="Aplicativo Mobile"></div>            
+            <div class="legenda">Organize seu dia com eficiência e produtividade na palma da mão.</div>
+        </card>
+        <card>
+            <div><img class="card-img" src="img/card_ecom.jpg" alt="E-commerce"></div>
+            <div class="legenda">Venda online com estilo, segurança e uma experiência única para o cliente.</div>
+        </card>
+        <card>
+            <div><img class="card-img" src="img/card_sistema.jpg" alt="Controle de Estoque"></div>
+            <div class="legenda">Controle total do seu negócio com relatórios inteligentes e automação.</div>
+        </card>
+        <card>
+            <div><img class="card-img" src="img/card_land.jpg" alt="Landing Page"></div>
+            <div class="legenda">Converta visitantes em clientes com páginas otimizadas e impactantes.</div>
+        </card>
+        </div>
+    </section>
+    <section class="secao" id="contato">
+        <h2>CONTATO</h2>
+
+    </section>
+    <footer>Desenvolvido por Danilo Freitas Miranda Lima - Aluno Coude - Formação Full Stack PHP Turma 28</footer>
+    
+</body>
+</html>
