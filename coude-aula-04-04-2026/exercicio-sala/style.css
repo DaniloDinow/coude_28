@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    gap: 5px;
+    text-align: center;
+    align-content: center;
+}
+.conteudo{
+    display: grid;
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
+    "menu principal principal"
+    "rodape rodape rodape";  
+    padding: 5px;
+} 
+
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: aqua;
+    height: 13vh;
+    padding: 5px;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: blueviolet;
+    height: 70vh;
+    padding: 5px;
+    
+}
+
+.principal{
+    grid-area: principal;
+    background-color: yellow;
+    height: 70vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: green;
+    height: 13vh;
+    padding: 5px;
+}
+
+.card{
+    background-color: blue;
+}
+
+#card1{
+    grid-column: 1 / 3
+}
+
