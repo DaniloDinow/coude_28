@@ -1,6 +1,10 @@
 /* Importando fontes do Google */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Paleta tipográfica Dare Devs */
 :root {
   --font-title: 'Orbitron', sans-serif;
@@ -94,6 +98,11 @@ nav{
 
 #home{
     margin-top: 5.4rem;
+}
+
+#quem-somos, #produtos, #contato{
+    /* Define 100px de espaço no topo ao navegar para esta seção */
+  scroll-margin-top: 5.4rem; 
 }
 
 .cards{
