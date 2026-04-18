@@ -14,7 +14,7 @@ section{
 /* BOTÃO */
 button{
     padding: 10px 20px;
-    transition: all 0.3s; /* Suaviza a transição */
+    transition: all 0.3s ease; /* Suaviza a transição */
 }
 
 button:hover{
@@ -36,6 +36,7 @@ button:active{
     text-align: center;
     background-color: blue;
     animation: entrar 5s ease 0s infinite alternate forwards;
+    transition: all 0.3s ease; /* Suaviza a transição */
 }
 
 @keyframes entrar {
@@ -51,6 +52,7 @@ button:active{
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    transition: all 0.3s ease; /* Suaviza a transição */
 }
 
 .bola:hover{
@@ -58,5 +60,5 @@ button:active{
 }
 
 @keyframes deslizar {
-    to{transform: translateX(200px);}    
+    to{transform: translateX(400px);}    
 }
