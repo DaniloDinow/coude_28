@@ -27,3 +27,7 @@ button:hover{
     cursor: pointer;        
 }
 
+input:focus{
+    border: 5px solid blue;
+}
+
