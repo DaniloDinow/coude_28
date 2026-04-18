@@ -1,0 +1,39 @@
+section{
+    margin: 10px;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    margin: 5px;
+
+    animation: rode 1s ease 0s infinite alternate forwards;
+
+    /* animation-name: rode;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+
+}
+
+@keyframes exemplo {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes rode {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
