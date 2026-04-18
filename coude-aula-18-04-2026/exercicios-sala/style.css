@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BOTÃO */
+button{
+    padding: 10px 20px;
+    transition: all 0.3s; /* Suaviza a transição */
+}
+
+button:hover{
+    background-color: red;
+    transform: scale(1.2);
+}
+
+button:active{
+    transform: translateY(4px); /* Move para baixo */
+    background-color: yellow;
+}
+
+/* CARD */
+.card{
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    background-color: blue;
+    animation: entrar 5s ease 0s infinite alternate forwards;
+}
+
+@keyframes entrar {
+    to{transform: translateY(-30px);}
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+/* BOLA */
+.bola{
+    border: 2px solid orangered;
+    background-color: orangered;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.bola:hover{
+    animation: deslizar 1.5s ease 0s 1 alternate forwards; 
+}
+
+@keyframes deslizar {
+    to{transform: translateX(200px);}    
+}
