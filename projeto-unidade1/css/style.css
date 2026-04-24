@@ -171,6 +171,11 @@ footer::before{
 
 }
 
+.horarios{
+    overflow: auto;
+    height: 10rem;
+}
+
 /* MEDIA BREAKPOINT*/
 
 @media (max-width:768px){
