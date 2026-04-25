@@ -50,7 +50,7 @@ h1, h2, h3 {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 a:hover {
   color: var(--color-hover);
@@ -68,7 +68,7 @@ header {
   display: flex;
   gap: 1rem;
 
-  position: fixed;
+  position:fixed;
   width: 100%;
   opacity: 0.95;
   backdrop-filter: blur(4px);
@@ -76,28 +76,37 @@ header {
 }
 
 logo{
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 nav{
-    display: flex;
-    justify-content:space-evenly; 
-    align-items: center;
-    flex-grow: 1;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content:space-evenly; 
+  align-items: center;
+  flex-grow: 1;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* Corpo*/
 .secao{
-    padding: 1rem;
+  padding: 1rem;
+}
+
+.banner{
+  position: absolute;
+  transition: opacity 0.5s ease; /* efeito suave */
+}
+
+.banner:hover{
+  opacity: 0; /* desaparece ao passar o mouse */
 }
 
 #home{
-    margin-top: 5.4rem;
+  margin-top: 5.4rem;
 }
 
 #quem-somos, #produtos, #contato{
@@ -106,19 +115,19 @@ nav{
 }
 
 .cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 card{
-    display: flex;
-    border: 2px solid var(--color-primary);
-    border-radius: 1rem;
-    flex-direction: column;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  border: 2px solid var(--color-primary);
+  border-radius: 1rem;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 card:hover{
@@ -127,30 +136,30 @@ card:hover{
 }
 
 .card-img{
-    width: 15rem;
-    height: 10rem;
-    border-radius: 0.85rem 0.85rem 0rem 0rem;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 0.85rem 0.85rem 0rem 0rem;
 }
 
 .legenda{
-    font-weight: bold;
-    width: 15rem;
-    height: 4rem;
-    text-align: center;
-    text-size-adjust: 0,8rem;
+  font-weight: bold;
+  width: 15rem;
+  height: 4rem;
+  text-align: center;
+  text-size-adjust: 0,8rem;
 }
 
 .contatos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 table, th, td{
-    border: 0.1rem solid var(--color-primary);
-    border-collapse: collapse;
+  border: 0.1rem solid var(--color-primary);
+  border-collapse: collapse;
 }
 
 input button:hover{
@@ -159,21 +168,20 @@ input button:hover{
 }
 
 footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 1rem;
 }
 
 footer::before{
-    content: url(../img/favicon.ico);
-
+  content: url(../img/favicon.ico);
 }
 
 .horarios{
-    overflow: auto;
-    height: 10rem;
+  overflow: auto;
+  height: 10rem;
 }
 
 /* MEDIA BREAKPOINT*/
