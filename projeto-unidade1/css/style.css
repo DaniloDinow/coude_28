@@ -82,6 +82,14 @@ logo{
   flex-shrink: 0;
 }
 
+.logo_dd{
+  animation: girar 3s linear 0s infinite normal forwards; 
+}
+
+@keyframes girar {
+    to{transform: rotatey(360deg);}    
+}
+
 nav{
   display: flex;
   justify-content:space-evenly; 
