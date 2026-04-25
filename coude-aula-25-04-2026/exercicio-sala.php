@@ -22,4 +22,13 @@ print_r($alunos);
 echo '<br><br>';
 print_r($alunos[3]);
 
+// separa em partes
+echo '<br><br>';
+$partes = explode(" ", $alunos[3]);
+echo $partes[0];
+
+echo '<br><br>';
+// se quiser só o último sobrenome
+echo end($partes);
+
 
