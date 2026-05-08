@@ -1,0 +1,29 @@
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+th{
+    background-color: rgb(8, 8, 87);
+    color: white;
+}
+
+.formula{
+    background-color: rgb(194, 194, 194);
+}
+
+button{
+    margin-top: 3px;
+}
+
+.largura{
+    width: 100%;
+}
