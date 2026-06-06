@@ -23,6 +23,4 @@ echo desempenho($atividades_mes2)."<br>";
 echo desempenho($atividades_mes3)."<br>";
 echo desempenho($atividades_mes4)."<br>";
 echo desempenho($atividades_mes5)."<br>";
-
-
 ?>
